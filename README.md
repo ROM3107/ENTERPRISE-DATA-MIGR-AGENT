@@ -445,23 +445,5 @@ Built with support from the Microsoft AI & Intelligence platform, leveraging:
 
 ---
 
-## 🎓 Learn More
-
-- 📖 [Architecture Overview](./ARCHITECTURE_DIAGRAM.md)
-- 🔍 [Implementation Details](./CODE_IMPLEMENTATION_GUIDE.md)
-- ✅ [Architecture Verification](./ARCHITECTURE_VERIFICATION.md)
-
----
-
-<div align="center">
-
-**Transform Legacy Code. Embrace the Cloud. 🚀**
-
-[Star us on GitHub](https://github.com/yourusername/data-migrator-agent) | [Read the Docs](./docs) | [Report an Issue](https://github.com/yourusername/data-migrator-agent/issues)
-
-</div>
-
----
-
-**Last Updated:** June 2024  
+**Last Updated:** June 2026  
 **Status:** ✅ Active Development
