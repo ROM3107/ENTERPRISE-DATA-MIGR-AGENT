@@ -55,21 +55,21 @@ Legacy Code → Discovery → Mapping → Conversion → Validation → Reports 
 
 ```mermaid
 graph LR
-    Input["📝 Legacy SQL/XML"] --> Orchestrator["🎭 Data-Migrator<br/>Orchestrator"]
+    Input["📝 Legacy SQL/XML"] --> Orchestrator["🎭 Data-Migrator Orchestrator"]
     
     Orchestrator --> Discovery["🔍 Discovery-Agent"]
-    Orchestrator --> Mapping["🗺️ Mapping-Analysis<br/>Agent"]
-    Orchestrator --> Conversion["⚙️ Code-Conversion<br/>Agent"]
-    Orchestrator --> Validation["✅ Validation<br/>Agent"]
-    Orchestrator --> Documentation["📄 Documentation<br/>Agent"]
+    Orchestrator --> Mapping["🗺️ Mapping-Analysis Agent"]
+    Orchestrator --> Conversion["⚙️ Code-Conversion Agent"]
+    Orchestrator --> Validation["✅ Validation Agent"]
+    Orchestrator --> Documentation["📄 Documentation Agent"]
     
     Discovery --> Output1["🎨 Flow Diagrams"]
-    Mapping --> Output2["🏆 Platform<br/>Recommendations"]
-    Conversion --> Output3["✨ Cloud-Native<br/>Code"]
+    Mapping --> Output2["🏆 Platform Recommendations"]
+    Conversion --> Output3["✨ Cloud-Native Code"]
     Validation --> Output4["🧪 Test Cases"]
-    Documentation --> Output5["📋 Reports &<br/>Artifacts"]
+    Documentation --> Output5["📋 Reports & Artifacts"]
     
-    Output1 --> Deliverables["📦 Complete<br/>Migration Package"]
+    Output1 --> Deliverables["📦 Migration Package"]
     Output2 --> Deliverables
     Output3 --> Deliverables
     Output4 --> Deliverables
@@ -356,57 +356,23 @@ END
 
 ## 🔗 Data Flow
 
-```
-┌─────────────────────────────────────┐
-│   Legacy Transformation Code        │
-│   (SQL/XML)                         │
-└────────────┬────────────────────────┘
-             │
-             ↓
-┌─────────────────────────────────────┐
-│  1. DISCOVERY                       │
-│  ✓ Parse code                       │
-│  ✓ Extract relationships            │
-│  ✓ Generate diagrams                │
-└────────────┬────────────────────────┘
-             │
-             ↓
-┌─────────────────────────────────────┐
-│  2. MAPPING                         │
-│  ✓ Analyze patterns                 │
-│  ✓ Recommend platforms              │
-│  ✓ Suggest optimizations            │
-└────────────┬────────────────────────┘
-             │
-             ↓
-┌─────────────────────────────────────┐
-│  3. CONVERSION                      │
-│  ✓ Transform syntax                 │
-│  ✓ Optimize for platform            │
-│  ✓ Generate scripts                 │
-└────────────┬────────────────────────┘
-             │
-             ↓
-┌─────────────────────────────────────┐
-│  4. VALIDATION                      │
-│  ✓ Create test cases                │
-│  ✓ Generate test data               │
-│  ✓ Verify equivalence               │
-└────────────┬────────────────────────┘
-             │
-             ↓
-┌─────────────────────────────────────┐
-│  5. DOCUMENTATION                   │
-│  ✓ Generate reports                 │
-│  ✓ Create artifacts                 │
-│  ✓ Export metrics                   │
-└────────────┬────────────────────────┘
-             │
-             ↓
-┌─────────────────────────────────────┐
-│   Cloud-Native Transformation       │
-│   + Migration Package               │
-└─────────────────────────────────────┘
+```mermaid
+graph TD
+    A["📝 Legacy Code (SQL/XML)"] --> B["🔍 Stage 1: DISCOVERY"]
+    B --> B1["Parse code<br/>Extract relationships<br/>Generate diagrams"]
+    B1 --> C["🗺️ Stage 2: MAPPING"]
+    
+    C --> C1["Analyze patterns<br/>Recommend platforms<br/>Suggest optimizations"]
+    C1 --> D["⚙️ Stage 3: CONVERSION"]
+    
+    D --> D1["Transform syntax<br/>Optimize for platform<br/>Generate scripts"]
+    D1 --> E["✅ Stage 4: VALIDATION"]
+    
+    E --> E1["Create test cases<br/>Generate test data<br/>Verify equivalence"]
+    E1 --> F["📄 Stage 5: DOCUMENTATION"]
+    
+    F --> F1["Generate reports<br/>Create artifacts<br/>Export metrics"]
+    F1 --> G["✨ Cloud-Native Code<br/>+ Migration Package"]
 ```
 
 ---
